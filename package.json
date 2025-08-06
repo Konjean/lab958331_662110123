@@ -1,0 +1,12 @@
+{
+  "name": "lab958331_662110123",
+  "version": "1.0.0",
+  "description": "lab958331_662110123",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
