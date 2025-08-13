@@ -13,7 +13,6 @@
       padding: 0;
     }
 
-
     h6 {
       font-family: ABeeZee;
       font-size: 14px;
@@ -31,7 +30,6 @@
 
     .fas {
       color: rgb(0, 45, 82);
-
     }
 
     .progress-bar {
@@ -45,8 +43,6 @@
       justify-items: center;
     }
 
-
-
     .footer {
       position: relative;
       bottom: -50px;
@@ -56,6 +52,16 @@
 </head>
 
 <body>
+  <!-- Buttons for scrolling -->
+  <div class="container my-3 d-flex gap-2">
+    <button class="btn btn-primary" onclick="document.getElementById('mywork').scrollIntoView({behavior: 'smooth'});">
+      Go to MyWork
+    </button>
+    <button class="btn btn-success" onclick="document.getElementById('education').scrollIntoView({behavior: 'smooth'});">
+      Go to Education
+    </button>
+  </div>
+  
   <div class="Homepage ">
     <div class="row mx-2 my-2">
       <div class="col-lg-4 col-md-4 col-12">
@@ -67,19 +73,12 @@
           <h2 class="ml-4">Chawakorn Suksatian</h2>
           <hr class="mt-n1">
           <div class="card-body mt-n3">
-            <h6><i class='fas fa-briefcase  mr-3'></i>Web Developer</h6>
-            <h6><i class='fas fa-home mt-1 mr-3'></i>Kawasoti,landon</h6>
-            <h6><i class='fas fa-envelope mt-1 mr-3'></i>XXX$gmail.com</h6>
-            <h6><i class="fas fa-phone-alt mt-1 mr-3"></i>xxxxxxxxxx</h6>
+            <h6><i class='fas fa-briefcase  mr-3'></i>662110123</h2>            
             <hr>
             <h3><i class="fas fa-cogs mr-3 mb-4"></i> Skill</h3>
             <h6>Abobe Photoshop</h6>
             <div class="progress rounded-pill my-3" style="height: 20px;">
               <div class="progress-bar" style=" height: 100%; width: 80%;">80%</div>
-            </div>
-            <h6>Photography</h6>
-            <div class="progress rounded-pill my-3" style="height: 20px;">
-              <div class="progress-bar" style=" height: 100%; width: 70%;">70%</div>
             </div>
             <h6>javascript</h6>
             <div class="progress rounded-pill my-3" style="height: 20px;">
@@ -95,13 +94,10 @@
             <div class="progress rounded-pill my-3" style="height: 20px;">
               <div class="progress-bar" style=" height: 100%; width: 100%;"></div>
             </div>
-            <h6>Hindi</h6>
-            <div class="progress rounded-pill my-3" style="height: 20px;">
-              <div class="progress-bar" style=" height: 100%; width: 60%;"></div>
-            </div>
-            <h6>Spanish</h6>
-            <div class="progress rounded-pill my-3" style="height: 20px;">
-              <div class="progress-bar" style=" height: 100%; width: 80%;"></div>
+            <hr>
+            <!-- MyWork section with added ID -->
+            <h3 id="mywork"><i class="fas fa-globe  mr-3 mt-3 mb-4"></i> MyWork</h3>
+            <img class="m-auto  " src="image/Your-AI2.jpg" width="100%">
             </div>
           </div>
         </div>
@@ -109,55 +105,31 @@
       <div class="col-lg-8 col-md-8 col-12">
         <div class="card shadow-sm">
           <div class="card-body">
-            <h2><i class="fas fa-suitcase mb-2 mr-2"></i> Work Experience</h2>
-
-            <h5 class="mt-4">Front End Developer /someCompany.com</h5>
-            <h6><i class="fas fa-calendar mr-3 my-3  "></i>jan 2016 - <button
-                class="btn btn-success px-3 py-0">Current</button>
+            <!-- "Experience" now left-aligned -->
+            <h2><i class="fas fa-suitcase mb-2 mr-2"></i> Experience</h2>
+            <h5 class="mt-4">GAME ARTIST 
+                <h5 class="mt-4"></h5> Desinge User interfaces               
+            Use Unity and Unreal Engine for game development.
+            At Chiang Mai University
+          August 2023 - Present
+            </h5>
             </h6>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae obcaecati distinctio velit non ipsum
-              dolor sit amet, consectetur adipisicing elit. Beatae obcaecati distinctio velit non
-              perspiciatis neque
-              perspiciatis neque!</p>
             <hr>
-            <h5 class="mt-4">Web Developer /someCompany.com</h5>
-            <h6><i class="fas fa-calendar my-3  mr-3 "></i> 2014-2016
-            </h6>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae obcaecati distinctio velit non ipsum
-              dolor sit amet, consectetur adipisicing elit. Beatae obcaecati distinctio velit non
-              perspiciatis neque
-              perspiciatis neque!</p>
-            <hr>
-            <h5 class="mt-4">Graphic Designer /someCompany.com</h5>
-            <h6><i class="fas fa-calendar my-3  mr-3 "></i> 2010-2014
-            </h6>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae obcaecati distinctio velit non ipsum
-              dolor sit amet, consectetur adipisicing elit. Beatae obcaecati distinctio velit non
-              perspiciatis neque
-              perspiciatis neque!</p>
           </div>
-
         </div>
         <div class="card mt-4">
           <div class="card-body">
-            <h2 class=" mb-2"><i class="fas fa-certificate"></i> Education</h2>
-            <h5 class="mt-4">Samatha high school</h5>
-            <h6><i class="fas fa-calendar my-2 mr-2"></i> 2011 - 2013</h6>
-            <p>Where i complete my +2 standard.</p>
-            <hr>
-            <h5 class="mt-4">Landon Business School</h5>
-            <h6><i class="fas fa-calendar my-2 mr-2"></i> 2013 - 2016</h6>
-            <p>Master Degree</p>
-            <hr>
-            <h5 class="mt-4">School of Coading</h5>
-            <h6><i class="fas fa-calendar my-2 mr-2"></i> 2016 - 2019</h6>
-            <p>Bachelor Degree</p>
+            <h2 id="education" class=" mb-2"><i class="fas fa-certificate"></i> Education</h2>
+            <h5 class="mt-4">Chiang Mai University
+                  Faculty of College of Arts, Media and Technology                  </h5>
+                  <h5 class="mt-4">
+                  Branch // Digital Game</h5>
+          <h6><i class="fas fa-calendar my-2 mr-2"></i> 2025 - Present</h6>
           </div>
         </div>
       </div>
     </div>
   </div>
-
 
   <div class=" footer bg-dark mt-4 ">
     <h5 class="py-4 text-white text-center">Powered by _web_de</h5>
